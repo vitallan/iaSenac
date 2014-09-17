@@ -3,7 +3,7 @@ Implementações sobre Inteligência Artificial
 
 Neste ambiente é possível encontrar alguns materiais sobre a disciplina de Inteligência Artificial.
 
-O material encontrado neste site tem licença [http://www.gnu.org/licenses/gpl.html](GPL).
+O material encontrado neste site tem licença [GPL](http://www.gnu.org/licenses/gpl.html).
 
 Este projeto foi criado em 2009, inicial hospedado em um repositório SVN e recentemente foi importado para o GIT.
 
