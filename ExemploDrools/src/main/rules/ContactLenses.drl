@@ -1,0 +1,105 @@
+#created on: 28/09/2009
+package example.contactLenses;
+
+#list any import classes here.
+
+import example.contactLenses.ContactLenses;
+
+#declare any global variables here
+
+
+#
+# As regras que devem ser implementadas sao:
+# 
+#se tear-prod-rate = reduced entao none
+#senao se tear-prod-rate = normal and astigmatism = no and age = young entao soft
+#senao se tear-prod-rate = normal and astigmatism = no and age = pre-presbyopic: soft
+#senao se tear-prod-rate = normal and astigmatism = no and age = presbyopic and spectacle-prescrip = myope entao none
+#senao se tear-prod-rate = normal and astigmatism = no and age = presbyopic and spectacle-prescrip = hypermetrope entao soft
+#senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = myope entao hard
+#senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = young entao hard
+#senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = pre-presbyopic entao none
+#senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = presbyopic entao none
+#
+
+
+rule "se tear-prod-rate = reduced entao none"
+	
+	when
+		i : ContactLenses(tearProdRate == "reduced")
+	then 
+		System.out.println("Regra 1");
+		i.setContactLenses("none");
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = no and age = young entao soft"
+
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "no" && age == "young")		
+	then
+		System.out.println("Regra 2"); 
+		i.setContactLenses("soft");
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = no and age = pre-presbyopic: soft"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "no" && age == "soft")
+	then 
+		System.out.println("Regra 3");
+		i.setContactLenses("soft");	
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = no and age = presbyopic and spectacle-prescrip = myope entao none"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "no" && age == "presbyopic" && spectaclePrescrip == "myope")
+	then 
+		System.out.println("Regra 4");
+		i.setContactLenses("none");
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = no and age = presbyopic and spectacle-prescrip = hypermetrope entao soft"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "no" && age == "presbyopic" && spectaclePrescrip == "hypermetrope")
+	then 
+		System.out.println("Regra 5");
+		i.setContactLenses("soft");		
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = myope entao hard"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "yes" && spectaclePrescrip == "myope")	
+	then
+		System.out.println("Regra 6"); 
+		i.setContactLenses("hard");
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = young entao hard"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "yes" && spectaclePrescrip == "hypermetrope" && age == "young")	
+	then 
+		System.out.println("Regra 7");
+		i.setContactLenses("hard");		
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = pre-presbyopic entao none"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "yes" && spectaclePrescrip == "hypermetrope" && age == "pre-presbyopic")
+	then 
+		System.out.println("Regra 8");
+		i.setContactLenses("none");
+end
+
+rule "senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = presbyopic entao none"
+	
+	when
+		i : ContactLenses(tearProdRate == "normal" && astigmatism == "yes" && spectaclePrescrip == "hypermetrope" && age == "presbyopic")
+	then
+		System.out.println("Regra 9"); 
+		i.setContactLenses("none");
+end

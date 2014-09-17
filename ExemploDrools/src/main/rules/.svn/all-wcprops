@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/iaSenac/!svn/ver/11/ExemploDrools/src/main/rules
+END
+Sample.drl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/iaSenac/!svn/ver/10/ExemploDrools/src/main/rules/Sample.drl
+END
+ContactLenses.drl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/iaSenac/!svn/ver/11/ExemploDrools/src/main/rules/ContactLenses.drl
+END
+licenseApplication.drl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/iaSenac/!svn/ver/10/ExemploDrools/src/main/rules/licenseApplication.drl
+END
+simple.drl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/iaSenac/!svn/ver/10/ExemploDrools/src/main/rules/simple.drl
+END
+drools.package
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/iaSenac/!svn/ver/10/ExemploDrools/src/main/rules/drools.package
+END
+healthInsurance.drl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/iaSenac/!svn/ver/10/ExemploDrools/src/main/rules/healthInsurance.drl
+END

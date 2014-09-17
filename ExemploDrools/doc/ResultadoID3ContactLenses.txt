@@ -1,0 +1,29 @@
+Arvore gerada pelo algoritmo ID3 (implementacao Weka)
+utilizando os dados contact-lenses.arff
+
+tear-prod-rate = reduced: none
+tear-prod-rate = normal
+|  astigmatism = no
+|  |  age = young: soft
+|  |  age = pre-presbyopic: soft
+|  |  age = presbyopic
+|  |  |  spectacle-prescrip = myope: none
+|  |  |  spectacle-prescrip = hypermetrope: soft
+|  astigmatism = yes
+|  |  spectacle-prescrip = myope: hard
+|  |  spectacle-prescrip = hypermetrope
+|  |  |  age = young: hard
+|  |  |  age = pre-presbyopic: none
+|  |  |  age = presbyopic: none
+
+Transformando a arvore em um conjunto de regras:
+
+se tear-prod-rate = reduced entao none
+senao se tear-prod-rate = normal and astigmatism = no and age = young entao soft
+senao se tear-prod-rate = normal and astigmatism = no and age = pre-presbyopic: soft
+senao se tear-prod-rate = normal and astigmatism = no and age = presbyopic and spectacle-prescrip = myope entao none
+senao se tear-prod-rate = normal and astigmatism = no and age = presbyopic and spectacle-prescrip = hypermetrope entao soft
+senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = myope entao hard
+senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = young entao hard
+senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = pre-presbyopic entao none
+senao se tear-prod-rate = normal and astigmatism = yes and spectacle-prescrip = hypermetrope and age = presbyopic entao none

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores
+END
+JogadorMinMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorMinMax.java
+END
+JogadorAleatorioFocado.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorAleatorioFocado.java
+END
+Robo.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/Robo.java
+END
+EstadoUtilidade.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/EstadoUtilidade.java
+END
+JogadorARM2.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorARM2.java
+END
+Ameaca.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/Ameaca.java
+END
+Timao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/Timao.java
+END
+JogadorBGM.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorBGM.java
+END
+JogadorMDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorMDF.java
+END
+No.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/No.java
+END
+Estado.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/Estado.java
+END
+HallanBatman.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/HallanBatman.java
+END
+JogadorPaquiderme1.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorPaquiderme1.java
+END
+JogadorManual.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorManual.java
+END
+JogadorAleatorio.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorAleatorio.java
+END
+Jogador.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/Jogador.java
+END
+JogadorTux.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorTux.java
+END
+Serialize.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/Serialize.java
+END
+JogadorGuru.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/JogadorGuru.java
+END
+EstadoMinMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/EstadoMinMax.java
+END
+MinMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/MinMax.java
+END
+MinMaxAlphaBeta.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/MinMaxAlphaBeta.java
+END
+EstadoMinMaxHallanBatman.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/EstadoMinMaxHallanBatman.java
+END
+MinMaxHallanBatman.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/iaSenac/!svn/ver/2/LinhaQuatro/src/linhaQuatro/jogadores/MinMaxHallanBatman.java
+END

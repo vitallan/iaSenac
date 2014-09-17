@@ -1,0 +1,41 @@
+#created on: 24/09/2009
+package example.simple
+
+import example.simple.Simple;
+
+#
+# Parece que a avaliacao das regras eh feita de "baixo para cima"
+#
+#
+
+rule "Meio"
+	when
+		$s : Simple(input > 10 && input <= 20)
+	then 
+		System.out.println("Meio");
+		$s.setOutput(true);
+end
+
+rule "Inicio e Fim"
+	when
+		$s : Simple(input <= 10)
+	then
+		System.out.println("Inicio e Fim"); 
+		$s.setOutput(false);
+end
+
+rule "Conflitante"
+	when
+		$s : Simple(input > 10)
+	then 
+		System.out.println("Conflitante");
+		$s.setOutput(true);
+end
+
+rule "Fim"
+	when
+		$s : Simple(input > 20)
+	then 
+		System.out.println("Fim");
+		$s.setOutput(false);
+end

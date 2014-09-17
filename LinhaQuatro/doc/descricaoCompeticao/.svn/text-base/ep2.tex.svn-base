@@ -1,0 +1,302 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{babel}
+\usepackage{graphics}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{alltt,fancyvrb,amssymb}
+\usepackage{listings}
+\usepackage{float,ctable}
+%\usepackage{dentitle}
+%\usepackage{personal}
+
+\begin{document}
+
+\title{Projeto da Disciplina -
+Competição de quatro em uma linha (\emph{Four-in-a-row}) - Versão 2008/2}
+\author{Prof. Fabrício Jailson Barth\\
+Laboratório de Programação IV - IA\\
+Centro Universitário SENAC}
+\date{$2^{o}$. semestre de 2008}
+%\makedendentitle{Centro Universitário SENAC}{Laboratório de
+%  Programação IV - IA}{}
+
+\maketitle
+
+\section{Definição do jogo}
+
+O jogo quatro em uma linha\footnote{Também conhecido como
+  \textit{Conecta Quatro}} (\emph{Connect Four}) é um jogo de
+tabuleiro de duas pessoas. As jogadas são alternadas entre os
+jogadores. Em cada jogada cada jogador escolhe uma coluna para inserir
+uma bola com a cor do jogador. As bolas são inseridas em um tabuleiro
+vertical com sete colunas e seis linhas. O objetivo do jogo é ligar
+quatro bolas da mesma cor em uma linha vertical, horizontal ou
+diagonal - antes que o seu oponente faça
+isso\footnote{http://en.wikipedia.org/wiki/Connect\_Four}. Um exemplo
+de fim de jogo é apresentado na figura \ref{fig:exemploJogo}.
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.4\textheight}
+{\includegraphics{figuras/quatroEmUm_1.eps}}
+\caption{Exemplo de fim de jogo}
+\label{fig:exemploJogo}
+\end{figure}
+
+O objetivo deste trabalho é implementar um jogador para este
+jogo. Este jogador deverá participar de uma competição. As regras e
+restrições da competição são apresentadas na próxima seção.
+
+\section{Regras e restrições da
+competição}
+
+A competição é do tipo \emph{todos-contra-todos} com jogos de ida e
+volta. Ou seja, todo jogador irá jogar contra todos os outros
+jogadores duas vezes. Os resultados podem ser vitória, derrota ou
+empate. A vitória vale 1 ponto, empate vale 0.5 e derrota vale 0. Os
+pontos de cada jogador serão somados depois do término dos jogos.
+
+A competição terá como participantes os jogadores implementados pelas
+equipes, um jogador \emph{aleatório}, um jogador \emph{avançado}
+desenvolvido pelo professor e outros três jogadores vencedores do
+semestre passado. Informações sobre como os três jogadores
+vencedores do semestre passado foram implementados poderão ser
+encontradas nos relatórios anexos.
+
+Nenhum jogador poderá perder do jogador
+chamado \emph{"aleatório"}
+(\emph{baseline} da competição). A equipe que perder do \emph{baseline} da
+competição terá a sua pontuação na competição decrementada por $3$ pontos.
+
+Cada jogador deve realizar as jogadas em
+menos de 10 segundos. Se o jogador
+realizar uma jogada que demore mais que
+10 segundos então a equipe terá a sua pontuação na
+competição decrementada por $2$ pontos.
+
+O jogador que provocar o \emph{looping}
+infinito do gerenciador terá a sua pontuação na
+competição decrementada por $5$ pontos. Este tipo de situação
+pode acontecer se o jogador for
+programado para escolher sempre a mesma
+coluna ou sempre as mesmas poucas colunas. 
+
+Após o término da competição, os pontos de cada jogador serão
+somados. Quanto maior o número de pontos, melhor será a colocação do
+jogador e, conseqüentemente, melhor será a nota da equipe que
+desenvolveu o jogador. Cada equipe poderá ser formada por até três
+pessoas.
+
+\section{Utilização do ambiente para a
+competição}
+
+Será disponibilizado para as equipes um pacote com as seguintes
+classes:
+
+\begin{itemize}
+\item \emph{GerenciadorLinhaQuatro}: Trata-se da classe responsável
+  por gerenciar os jogos. Os jogos realizados estão
+  \emph{hard-coded}. Cada nova seqüencia de jogos (campeonato) deve
+  ser codificada nesta classe. 
+\item \emph{Jogador}: Interface responsável por definir os métodos que
+  devem ser implementados pelos jogadores.
+\item \emph{JogadorAleatorio}: Implementação do jogador ``aleatório'',
+  \emph{baseline} da competição.
+\item \emph{JogadorAleatorioFocado}: Implementação de um outro tipo de
+  jogador aleatório que joga apenas nas casas 3, 4 e 5, nas casas
+  centrais.
+\item \emph{JogadorManual}: Implementação de um jogador que espera
+  pela entrada do usuário.
+\item \emph{JogoLinhaQuatro}: Classe que implementa a lógica do jogo.
+\end{itemize} 
+
+Os arquivos que merecem atenção das equipes são
+$GerenciadorLinhaQuatro.java$ e $Jogador.java$. Na próxima seção é
+apresentado um roteiro para implementação dos jogadores.  
+ 
+\section{Implementação dos jogadores}
+
+Cada equipe deve criar uma classe que representa um jogador. Esta
+classe deve implementar a interface $Jogador$:
+
+\begin{alltt}
+public class MeuJogador implements Jogador
+\end{alltt}
+
+A interface $Jogador$ é composta pelos seguintes métodos:
+
+\begin{itemize}
+\item \emph{public String getNome()}: este método deve retornar o nome
+  do jogador. Utilize um nome significativo, pois este nome será
+  utilizado para gerar o arquivo de $log$ da competição.
+\item \emph{public int jogada(int[][] tabuleiro, int
+    corDaMinhaBola)}: este método recebe a situação atual do
+  tabuleiro, a cor da bola do jogador (1 ou 2) e retorna a coluna onde
+  a bola deve ser colocada ($0,1,\cdots,6$).  
+\end{itemize}
+
+Um exemplo de classe que implementa um jogador é apresentado no código
+\ref{cod:classe}.
+
+\begin{figure}[H]
+\hline
+\center
+\small
+\VerbatimInput
+[xleftmargin=5mm,numbers=left,obeytabs=true]{codigos/JogadorAleatorio.java}
+\hline
+\caption{Implementação da classe JogadorAleatorio}
+\label{cod:classe}
+\end{figure}
+
+A classe que implementa o jogador da equipe pode fazer referência a
+outras classes necessárias para o raciocínio do jogador.
+
+\subsection{Sugestões para testes}
+
+Sugere-se para testes realizar algumas competições com outros
+jogadores disponibilizados no pacote. A cada nova versão de jogador,
+pode-se utilizar a versão antiga para uma competição. Sugere-se
+fortemente, no mínimo, testar o jogador contra o jogador ``aleatório''
+(\emph{baseline} da competição).
+
+Para criar novas competições é necesário alterar a classe
+$GerenciadorLinhaQuatro$ e executá-la.
+
+\section{Outros Jogadores (participantes do campeonato)}
+
+Os outros jogadores participantes da competição são
+apresentados abaixo:
+
+\begin{itemize}
+\item \textbf{TUX}: Jogador desenvolvido pelos alunos Diego Ucha e Fábio
+Montefusco no $2^{o}$ semestre de 2007.
+\item \textbf{BGM}: Jogador desenvolvido pelos alunos Bruno Herrera, Gabriel Koji
+e Marcelo Honório no $2^{o}$ semestre de 2007.
+\item \textbf{Timão}: Jogador desenvolvido pelos alunos Caio Sanchez e Alexandre
+Sierra no $1^{o}$ semestre de 2008.
+\item \textbf{``Avançado''}: Jogador desenvolvido pelo professor
+  Fabrício.
+\end{itemize}
+
+Todos os relatórios sobre como os jogadores foram desenvolvidos
+podem ser encontrados na pasta \textit{doc/descricaoJogadores}.
+
+\section{Avaliação e formato do relatório}
+
+A avaliação do trabalho é formada pelos seguintes itens:
+
+\begin{itemize}
+\item Colocação do jogador na competição ($0-7$ pontos). O jogador que
+  obtiver a melhor pontuação receberá 7 pontos. A segunda melhor
+  pontuação receberá 6 pontos. A cada nível de pontuação será
+  decrementado 1 ponto da equipe. Um exemplo pode ser visualizado na
+  tabela \ref{tab:pontos}.
+
+\begin{table}[htpb]
+\centering
+\small
+\caption{Exemplo de pontuação}
+\vspace{0.2cm}
+\begin{tabular}{|c|c|c|}
+\toprule
+Jogador&Pontos obtidos na competição&Nota\\
+\midrule
+$Jogador_{1}$ & 3 & 6\\
+$Jogador_{baseline}$ & 0 & sem nota\\
+$Jogador_{3}$ & 6 & 7\\
+$Jogador_{4}$ & 3 & 6\\
+\bottomrule
+\end{tabular}
+\label{tab:pontos}
+\end{table}
+
+\item Análise do relatório ($0-3$ pontos). Será avaliado a clareza,
+  objetividade e completude de cada item do relatório. O relatório deve
+  conter os seguintes itens: 
+
+\begin{itemize}
+
+\item \textbf{Introdução e Método}: descrever
+quais foram os passos realizados para chegar
+até a solução.
+
+\item \textbf{Solução}: a descrição da solução adotada.
+Que algoritmo foi implementado e quais
+os detalhes de implementação. Por
+exemplo, se o algoritmo utilizado for o
+\textsc{Min-Max}, detalhe o máximo
+possível a \textbf{função de utilidade} e
+descreve qual foi a profundidade adotada.
+
+\item \textbf{Testes}: Descrever quais foram os testes
+realizados antes da competição para
+garantir que o seu jogador funcione.
+Descrever quais foram os testes
+realizados antes da competição para
+inferir a eficiência do jogador.
+Descrever os testes para determinar os
+melhores valores de parâmetros para o
+jogador.
+
+\item \textbf{Considerações finais}: Descrever os itens
+que fazem você acreditar que o seu
+jogador terá um desempenho bom, ou até
+mesmo ganhe a competição.
+
+\end{itemize}
+
+O relatório deverá ser entregue em um
+formato manipulável por
+\emph{Copy-Paste}: doc, odt, \LaTeX, por
+exemplo. O conteúdo do relatório será
+utilizado na confecção de um relatório
+único e final da competição. 
+
+Utilize o relatório do jogador ``Avançado'' como exemplo.
+
+\item Análise do projeto do jogador e do código fonte. Este item da
+  avaliação tem como objetivo identificar cópias de trabalhos e
+  incoerências entre a implementação e o relatório. 
+
+Se for identificado cópia de trabalhos, a nota do projeto será
+calculada da seguinte maneira:
+
+\begin{equation}
+Nota\_Final = \frac{Nota\_Da\_Competicao + Nota\_Do\_Relatorio}
+{Numero\_Trabalhos\_Identicos}
+\end{equation}
+
+para todos os trabalhos identificados como similares.
+
+Se for identificado incoerências graves entre o relatório e a
+implementação, a nota da equipe será zero. Incoerências leves irão
+decrementar a nota da equipe.
+
+Em casos normais, a nota será calculada da seguinte maneira:
+
+\begin{equation}
+Nota\_Final = Nota\_Da\_Competicao + Nota\_Do\_Relatorio
+\end{equation}
+\end{itemize}
+
+\section{Nota importante}
+
+Existem trabalhos, de mestrado e doutorado - disponíveis na Internet,
+que provam que existe uma forma para sempre ganhar neste jogo. Seria
+muito interessante se uma, ou mais, equipes conseguissem implementar
+um jogador que sempre ganha para este jogo.
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+#created on: 21/09/2009
+package example.health
+
+rule "Parto dentro do limite"
+	when
+		$p : Pessoa (carencia == Tipos.CARENCIA.DENTRO_LIMITE , sinistro == Tipos.SINISTRO.PARTO)
+	then 
+		System.out.println("Parto dentro do limite");
+		$p.setLiberado(true);
+end
+
+rule "Parto com cadastro"
+	when
+		$p : Pessoa(cadastro == Tipos.CADASTRO.OK , sinistro == Tipos.SINISTRO.PARTO)
+	then
+		System.out.println("Parto com cadastro"); 
+		$p.setLiberado(true);
+end
+
+rule "Cadastro ok, carencia dentro do limite e sinitro igual a acidente"
+	when
+		$p : Pessoa(cadastro == Tipos.CADASTRO.OK , carencia == Tipos.CARENCIA.DENTRO_LIMITE , sinistro == Tipos.SINISTRO.ACIDENTE)
+	then 
+		System.out.println("Cadastro ok, carencia dentro do limite e sinitro igual a acidente");
+		$p.setLiberado(true);
+end
+
+rule "Cadastro ok e carencia fora do limite"
+	when
+		$p : Pessoa(cadastro == Tipos.CADASTRO.OK , carencia == Tipos.CARENCIA.FORA_LIMITE)
+	then 
+		System.out.println("Cadastro ok e carencia fora do limite");
+		$p.setLiberado(false);
+end

@@ -1,0 +1,21 @@
+Resultados da competição
+Aletório perdeu Aletório Focado venceu
+Aletório Focado venceu Aletório perdeu
+Aletório perdeu MinMax Fabrício venceu
+MinMax Fabrício venceu Aletório perdeu
+Aletório perdeu Tux venceu
+Tux venceu Aletório perdeu
+Aletório perdeu Jogador BGM venceu
+Jogador BGM venceu Aletório perdeu
+Aletório Focado perdeu MinMax Fabrício venceu
+MinMax Fabrício venceu Aletório Focado perdeu
+Aletório Focado perdeu Tux venceu
+Tux venceu Aletório Focado perdeu
+Aletório Focado perdeu Jogador BGM venceu
+Jogador BGM venceu Aletório Focado perdeu
+MinMax Fabrício perdeu Tux venceu
+Tux venceu MinMax Fabrício perdeu
+MinMax Fabrício venceu Jogador BGM perdeu
+Jogador BGM venceu MinMax Fabrício perdeu
+Tux venceu Jogador BGM perdeu
+Jogador BGM venceu Tux perdeu

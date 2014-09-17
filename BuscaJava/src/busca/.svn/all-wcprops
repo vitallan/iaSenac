@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/iaSenac/!svn/ver/6/BuscaJava/src/busca
+END
+Nodo.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Nodo.java
+END
+Heuristica.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Heuristica.java
+END
+AEstrela.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/AEstrela.java
+END
+BuscaBidirecional.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/BuscaBidirecional.java
+END
+Antecessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Antecessor.java
+END
+BuscaLargura.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/BuscaLargura.java
+END
+BuscaHeuristica.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/BuscaHeuristica.java
+END
+Estado.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Estado.java
+END
+Aleatorio.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Aleatorio.java
+END
+BuscaRecursiva.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/BuscaRecursiva.java
+END
+BuscaProfundidade.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/BuscaProfundidade.java
+END
+Status.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Status.java
+END
+BuscaIterativo.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/BuscaIterativo.java
+END
+MostraStatusConsole.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/MostraStatusConsole.java
+END
+SubidaMontanha.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/SubidaMontanha.java
+END
+Busca.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/iaSenac/!svn/ver/6/BuscaJava/src/busca/Busca.java
+END

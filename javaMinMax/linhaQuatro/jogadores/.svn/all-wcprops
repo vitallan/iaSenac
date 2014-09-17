@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores
+END
+JogadorMinMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/JogadorMinMax.java
+END
+JogadorAleatorioFocado.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/JogadorAleatorioFocado.java
+END
+JogadorManual.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/JogadorManual.java
+END
+EstadoUtilidade.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/EstadoUtilidade.java
+END
+Jogador.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/Jogador.java
+END
+JogadorAleatorio.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/JogadorAleatorio.java
+END
+EstadoMinMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/EstadoMinMax.java
+END
+MinMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/MinMax.java
+END
+MinMaxAlphaBeta.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/iaSenac/!svn/ver/8/javaMinMax/linhaQuatro/jogadores/MinMaxAlphaBeta.java
+END

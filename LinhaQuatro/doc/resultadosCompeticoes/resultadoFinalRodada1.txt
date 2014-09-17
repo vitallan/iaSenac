@@ -1,0 +1,31 @@
+Resultados da competição 1a rodada
+
+Aletório perdeu Tux venceu
+Tux venceu Aletório perdeu
+Aletório perdeu Jogador BGM venceu
+Jogador BGM venceu Aletório perdeu
+Aletório perdeu Timão! venceu
+Timão! venceu Aletório perdeu
+Aletório perdeu JogadorX venceu
+JogadorX venceu Aletório perdeu
+Tux perdeu Jogador BGM venceu
+Jogador BGM venceu Tux perdeu
+Tux empatou Timão! empatou
+Timão! venceu Tux perdeu
+Tux venceu JogadorX perdeu
+JogadorX perdeu Tux venceu
+Jogador BGM empatou Timão! empatou
+Timão! empatou Jogador BGM empatou
+Jogador BGM venceu JogadorX perdeu
+JogadorX perdeu Jogador BGM venceu
+Timão! venceu JogadorX perdeu
+JogadorX perdeu Timão! venceu
+
+Resultados da competição 2a rodada
+
+Tux venceu Jogador BGM perdeu
+Jogador BGM empatou Tux empatou
+Tux empatou Timão! empatou
+Timão! venceu Tux perdeu
+Jogador BGM venceu Timão! perdeu
+Timão! venceu Jogador BGM perdeu
