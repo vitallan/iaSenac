@@ -2,22 +2,14 @@ package linhaQuatro;
 
 import java.util.ArrayList;
 
-import linhaQuatro.jogadores.HallanBatman;
 import linhaQuatro.jogadores.Jogador;
-import linhaQuatro.jogadores.JogadorARM2;
-import linhaQuatro.jogadores.JogadorAleatorio;
-import linhaQuatro.jogadores.JogadorBGM;
-import linhaQuatro.jogadores.JogadorGuru;
-import linhaQuatro.jogadores.JogadorMDF;
-import linhaQuatro.jogadores.JogadorMinMax;
+import linhaQuatro.jogadores.JogadorManual;
 import linhaQuatro.jogadores.JogadorPaquiderme1;
-import linhaQuatro.jogadores.JogadorTux;
-import linhaQuatro.jogadores.Timao;
 
 /**
- * Classe responsável por gerenciar os jogos.
+ * Classe responsavel por gerenciar os jogos.
  * 
- * @author Fabrício J. Barth
+ * @author Fabricio J. Barth
  * @version 06, junho, 2008
  *
  */
@@ -33,23 +25,8 @@ public class GerenciadorLinhaQuatro {
 		 * Jogadores da competicao 2008/2
 		 */
 		ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
-		jogadores.add(new JogadorAleatorio());
-		//jogadores.add(new JogadorManual());
-		//jogadores.add(new JogadorAleatorioFocado());
-		jogadores.add(new JogadorMDF());
-		jogadores.add(new JogadorGuru());
+		jogadores.add(new JogadorManual());
 		jogadores.add(new JogadorPaquiderme1());
-		jogadores.add(new HallanBatman());
-		jogadores.add(new JogadorMinMax());
-		jogadores.add(new JogadorTux());
-		jogadores.add(new JogadorBGM());
-		jogadores.add(new JogadorARM2());
-		/*
-		 * Jogadores do 1o sem. de 2008
-		 */
-		jogadores.add(new Timao());
-		//jogadores.add(new JogadorX());
-		
 		/*
 		 * Jogos
 		 */
@@ -68,7 +45,7 @@ public class GerenciadorLinhaQuatro {
 		 * Resultados
 		 */
 		System.out.println("");
-		System.out.println("Resultados da competição");
+		System.out.println("Resultados da competicao");
 		for(int i=0; i<jogos.size(); i++){
 			System.out.println(jogos.get(i).resultado());
 		}

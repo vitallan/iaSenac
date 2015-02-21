@@ -4,7 +4,7 @@ import linhaQuatro.jogadores.*;
 
 /**
  * 
- * @author Fabrício J. Barth
+ * @author Fabrï¿½cio J. Barth
  * @version 05, November, 2007
  *
  */
@@ -39,7 +39,7 @@ public class JogoLinhaQuatro {
 				duracaoJogada = (tempFinal - tempInicial)/1000;
 				System.out.println("");
 				System.out.println(this.jogadores[this.jogadorDaVez].getNome()+" jogou.");
-				System.out.println("Duração da jogada = "+duracaoJogada+" s");
+				System.out.println("Duracao da jogada = "+duracaoJogada+" s");
 				if(duracaoJogada>=10)
 					System.out.println("JOGADA INVALIDA!");
 				System.out.println("");
@@ -65,7 +65,7 @@ public class JogoLinhaQuatro {
 				duracaoJogada = (tempFinal - tempInicial)/1000;
 				System.out.println("");
 				System.out.println(this.jogadores[this.jogadorDaVez].getNome()+" jogou.");
-				System.out.println("Duração da jogada = "+duracaoJogada+" s");
+				System.out.println("Duracao da jogada = "+duracaoJogada+" s");
 				if(duracaoJogada>=10)
 					System.out.println("JOGADA INVALIDA!");
 				System.out.println("");
